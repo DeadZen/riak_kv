@@ -418,7 +418,7 @@ system_stats() ->
     [{nodename, node()},
      {connected_nodes, nodes()},
      {sys_driver_version, list_to_binary(erlang:system_info(driver_version))},
-     {sys_global_heaps_size, erlang:system_info(global_heaps_size)},
+     %{sys_global_heaps_size, erlang:system_info(global_heaps_size)}, % deprecated
      {sys_heap_type, erlang:system_info(heap_type)},
      {sys_logical_processors, erlang:system_info(logical_processors)},
      {sys_otp_release, list_to_binary(erlang:system_info(otp_release))},
